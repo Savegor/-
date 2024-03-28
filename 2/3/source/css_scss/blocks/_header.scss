@@ -1,0 +1,131 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    padding: 0 15px;
+    z-index: 4;
+    transition: .6s linear all;
+}
+.header-active{
+    background-color: rgba($color: #1A3E3E, $alpha: .5);
+}
+.header__items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.logo {
+    padding-right: 15px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        li:not(:last-child){
+            margin-right: 24px;
+        }
+    }
+}
+.nav__link {
+    color: #FDFDFD;
+    font-weight: 600;
+    transition: .6s color;
+}
+.nav__link:hover, .nav__link:active{
+    color: #F2BE22;
+}
+
+.consult-btn {
+    margin-left: 49px;
+}
+
+.burger{
+    display: none;
+    z-index: 10;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    .burger__line{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #FDFDFD;
+        z-index: 10;
+        transition: .6s all;
+    }
+    .burger__line-first{
+        top: 0;
+    }
+    .burger__line-second{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .burger__line-third{
+        width: 50%;
+        transform: translateX(100%);
+        bottom: 0;
+    }
+}
+.burger__active{
+    .burger__line-first{
+        transform: rotate(45deg);
+        top: 25%;
+    }
+    .burger__line-second{
+        transform: rotate(-45deg);
+        top: 25%;
+    }
+    .burger__line-third{
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 1024px) {
+    .burger{
+        display: block;
+    }
+    .nav{
+        height: 100%;
+        ul{
+            width: 100%;
+            height: 100%;
+            background-color: #1A3E3E;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            position: fixed;
+            align-items: flex-start;
+            top: 0;
+            left: 100%;
+            font-size: 30px;
+            z-index: 10;
+            padding-top: 90px;
+            transition: .6s all linear;
+            li:not(:last-child){  
+                margin-bottom: 50px;
+            }
+            li{
+                margin-left: 20px;
+            }
+            .nav__link{
+                padding-left: 18px;
+                background: url("../../images/arrows/arrow-right.svg") no-repeat left center;
+            }
+            .nav__link:hover{
+                border-bottom: 1px solid #F2BE22;
+            }
+        }
+        .consult-btn{
+            display: none;
+        }
+    }
+    .nav_active{
+        ul{
+            left: 0;
+        }
+    }
+}

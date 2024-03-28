@@ -1,0 +1,16 @@
+<svg width="140" height="23" viewBox="0 0 140 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="140" height="23" fill="#1E1E1E"/>
+<g clip-path="url(#clip0_0_1)">
+<rect width="768" height="3129" transform="translate(-39 -3057)" fill="#EBEBEB"/>
+<rect x="-39" y="-29" width="768" height="80" fill="#4C5866"/>
+<circle cx="8.5" cy="11" r="8" stroke="white"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Ubuntu" font-size="20" font-weight="300" letter-spacing="0em"><tspan x="22" y="18.43">simple</tspan></text>
+<rect x="86.5" y="3" width="31" height="16" rx="8" stroke="white"/>
+<circle cx="131.5" cy="11" r="8" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="768" height="3129" fill="white" transform="translate(-39 -3057)"/>
+</clipPath>
+</defs>
+</svg>

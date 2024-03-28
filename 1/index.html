@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/css-scss/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet" />
+    <title>Simple</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="content">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="header__logo">
+                        <img src="/source/img/header-icons/Frame 85.svg" alt="logo">
+                    </a>
+                   <nav class="header__nav" id="header__nav">
+                        <ul class="header__nav__items" id="header__nav__items">
+                            <li><a class="header__nav__link" href="#">Продукция</a></li>
+                            <li><a class="header__nav__link" href="#">Материалы</a></li>
+                            <li><a class="header__nav__link" href="#">О нас</a></li>
+                            <li><a class="header__nav__link" href="#">Контакты</a></li>
+                        </ul>
+                   </nav>
+                   <div class="header__nav__buttons">
+                        <button class="search" id="search" onclick="active_search()"><img class="header__nav__btn" src="/source/img/header-icons/Search.svg" alt="search"></button>
+                        <div class="search__input" id="search__input">
+                            <input class="search__input__item" id="search__input__item" type="text" placeholder="Найти">
+                            <button id="search-clear-btn" onclick="search_clear_btn()"><img src="/source/img/header-icons/status=default.svg" alt="exit-icon"></button>
+                        </div> 
+                        <button class="login" id="login"><img class="header__nav__btn" src="/source/img/header-icons/log_in.svg" alt="login"></button>
+                   </div>
+                   <div class="header__burger">
+                        <div class="burger__lines" id="burger__lines" onclick="active_burger()">
+                            <span class="burger__line line1"></span>
+                            <span class="burger__line line2"></span>
+                            <span class="burger__line line3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="main__cont cont">
+                    <div class="main__text text-cont">
+                        <h1>Простые вещи. Из бумаги</h1>
+                        <p>Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками. </p>
+                        <button class="btn main-katalog-btn">Каталог</button>
+                    </div>
+                    <div class="main__img img-cont">
+                        <img src="/source/img/fon (2).jpg" alt="main-img">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="description">
+            <div class="container">
+                <div class="keep">
+                    <div class="top">
+                        <div class="V">
+                            <div class="V__img img-cont">
+                                <img src="/source/img/keep/Buissnes Cards v2 (85x55).jpg" alt="V1">
+                            </div>
+                            <div class="V__text text-cont">
+                                <h2>V.1</h2>
+                                <p>Результат вашего обучения</p>
+                            </div>
+                        </div>
+                        <div class="V">
+                            <div class="V__img img-cont">
+                                <img src="/source/img/keep/Buissnes Cards v5 (85x55) 1.jpg" alt="V2">
+                            </div>
+                            <div class="V__text text-cont">
+                                <h2>V.2</h2>
+                                <p>Результат вашего обучения</p>
+                            </div>
+                        </div>
+                        <div class="V">
+                            <div class="V__img img-cont">
+                                <img src="/source/img/keep/Buissnes Cards v6 (85x55) 1.jpg" alt="V3">
+                            </div>
+                            <div class="V__text text-cont">
+                                <h2>V.3</h2>
+                                <p>Результат вашего обучения</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="keep__cont">
+                            <div class="keep__img img-cont">
+                                <img src="/source/img/keep/Folder v8 Open 1.jpg" alt="keep-img">
+                            </div>
+                            <div class="keep__text text-cont">
+                                <h1>Максимальная белизна</h1>
+                                <p>Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта операция называется наполнением.</p>
+                                <p>Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products__div">
+                    <div class="products__items">
+                        <img src="/source/img/products/Frame 208.jpg" alt="products-img">
+                        <h2>Упаковка</h2>
+                        <div class="quantity">Тираж от 50 штук</div>
+                        <p>Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.</p>
+                        <a href="#">Подробнее<img src="/source/img/products/Arrow 1.svg" alt="arrow-icon"></a>
+                    </div>
+                    <div class="products__items">
+                        <img src="/source/img/products/Frame 209.jpg" alt="products-img">
+                        <h2>Пакеты</h2>
+                        <div class="quantity">Тираж от 200 штук</div>
+                        <p>С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.</p>
+                        <a href="#">Подробнее<img src="/source/img/products/Arrow 1.svg" alt="arrow-icon"></a>
+                    </div>
+                    <div class="products__items">
+                        <img src="/source/img/products/Frame 210.jpg" alt="products-img">
+                        <h2>Кейсы</h2>
+                        <div class="quantity">Тираж от 30 штук</div>
+                        <p>Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.</p>
+                        <a href="#">Подробнее<img src="/source/img/products/Arrow 1.svg" alt="arrow-icon"></a>
+                    </div>
+                    <div class="products__items">
+                        <img src="/source/img/products/Frame 211.jpg" alt="products-img">
+                        <h2>Другие изделия</h2>
+                        <div class="quantity">Тираж от 100 штук</div>
+                        <p>Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.</p>
+                        <div class="link">
+                            <a href="#">Подробнее</a>
+                            <img src="/source/img/products/Arrow 1.svg" alt="arrow-icon">
+                        </div>
+                    </div>
+                        
+            </div>
+        </section>
+    
+        <section class="partners">
+            <div class="container">
+                <div class="partners__items">
+                    <a href="#" class="partners__logo">
+                        <img src="/source/img/partners/Frame 225.svg" alt="logo-partner">
+                    </a>
+                    <a href="#" class="partners__logo">
+                        <img src="/source/img/partners/Frame.svg" alt="logo-partner">
+                    </a>
+                    <a href="#" class="partners__logo">
+                        <img src="/source/img/partners/hahnemuehle-logo-vector 1.svg" alt="logo-partner">
+                    </a>
+                    <a href="#" class="partners__logo">
+                        <img src="/source/img/partners/royal-talens-bv-logo-vector 1.svg" alt="logo-partner">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sketchbook">
+            <div class="container">
+                <div class="sketchbook__items cont">
+                    <div class="sketchbook__text text-cont">
+                        <h2>Simple скетчбук</h2>
+                        <p>80 листов, твердая обложка, бумага  Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!</p>
+                        <button class="sketchbook__btn btn">Купить</button>
+                    </div>
+                    <div class="sketchbook__img img-cont">
+                        <img src="/source/img/скетчбук/Book v4.jpg" alt="img-sketchbook">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="top">
+                <div class="container">
+                    <div class="footer__items">
+                        <a href="#" class="logo"><img src="/source/img/footer/Frame 85.svg" alt="logo"></a>
+                        <div class="icons">
+                            <div class="icon">
+                                <a class="icon__link" href="#"><img src="/source/img/footer/Vector (1).svg" alt="icon"></a>
+                            </div>
+                            <div class="icon">
+                                <a class="icon__link" href="#"><img src="/source/img/footer/Vector (2).svg" alt="icon"></a>
+                            </div>
+                            <div class="icon">
+                                <a class="icon__link" href="#"><img src="/source/img/footer/Vector (3).svg" alt="icon"></a>
+                            </div>
+                            <div class="icon">
+                                <a class="icon__link" href="#"><img src="/source/img/footer/Vector.svg" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <img src="/source/img/footer/Simple ® 2021.svg" alt="simple">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

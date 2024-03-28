@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+button{
+    border: none;
+}
+
+html, body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+img{
+    width: 100%;
+}

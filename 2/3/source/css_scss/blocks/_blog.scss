@@ -1,0 +1,99 @@
+.blog-items{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blog__contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 50px 0;
+    .blog__content{
+        display: flex;
+        // align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        gap: 24px;
+        .blog__content-img {
+            flex-basis: 40%;
+        }
+        .blog__content-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: 60%;
+            h4{
+                font-size: 24px;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+            .blog__content-p {
+                font-size: 14px;
+                font-weight: 400;
+                margin: 24px 0;
+            }
+            .blog__content-text-bottom {
+                align-self: flex-end;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 15px;
+                .blog__content-date {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #F2BE22;
+                }
+                .blog-link {
+                    color: #1A3E3E;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+}
+
+.blog-btn {
+}
+
+@media (max-width: 1200px){
+    .pre-title, .mini-title{
+        align-self: flex-start;
+        padding-right: 15px;
+    }
+    .blog-items{
+        padding-right: 0;
+    }
+    .blog__contents{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 35px 0;
+        overflow-y: hidden;
+        overflow-x: auto;
+        height: 600px;
+        width: 100%;
+        transform-origin: right top;
+        .blog__content{
+            gap: 16px;
+            flex-direction: column;
+            .blog__content-text{
+                h4{
+                    margin-top: 0;
+                    font-size: 20px;
+                }
+                .blog__content-p{
+                    margin: 16px 0;
+                }
+            }
+
+        }
+    }
+    .blog__contents > div{
+        width: 280px;
+        height: 500px;
+    }
+
+}

@@ -1,0 +1,12 @@
+.intro {
+    background: url("../../images/fon_main.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .intro{
+        height: 90vh;
+    }
+}
